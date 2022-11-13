@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: hsl(217, 54%, 11%);
+    margin: 0 auto;
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.125rem;
+}
+
+.container {
+    width: 320px;
+    background: hsl(216, 50%, 16%);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+p {
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+}
+
+.cont_main-img {
+    position: relative;
+}
+
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 280px;
+    height: 280px;
+    opacity: 0;
+    transform: .3s ease;
+    background: hsl(179, 62%, 43%);
+}
+
+.icon {
+    color: #fff;
+    position: absolute;
+    top: 40%;
+    left: 45%;
+    text-align: center;
+}
+
+.eq-image {
+    border-radius: 10px;
+}
+
+.cont_txt {
+    margin-top: 1em;
+}
+
+.cont_txt a {
+    text-decoration: none;
+    font-size: 18px;
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+}
+
+.cont_icon {
+    border-bottom: .1px dotted hsl(215, 51%, 70%);
+    margin-bottom: 0.5em;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+
+}
+
+.item1 {
+    color: hsl(178, 100%, 50%);
+    font-weight: 400;
+}
+
+.cont_avatar {
+    display: flex;
+    align-items: center;
+}
+
+.cont_avatar img {
+    margin-right: 10px;
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 50%;
+}
+
+.cont_avatar p a {
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+
+}
+
+
+
+.cont_main-img:hover .overlay {
+    opacity: 0.8;
+
+}
+
+.cont_txt a:hover,
+.cont_avatar p a:hover {
+    color: hsl(178, 100%, 50%);
+}
